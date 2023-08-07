@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react"
 // import Shimmer from "./Shimmer"
-import MenuShimmer from "./menuShimmer";
+import MenuShimmer from "./MenuShimmer";
 import { useParams } from "react-router-dom"
 import { CDN_LINK } from "../utils/constants";
 // import { MENU_LINK } from "../utils/constants";
