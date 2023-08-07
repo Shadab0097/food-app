@@ -565,10 +565,10 @@ inputList {
 /* @media query//////////////////////////*/
 
 
-@media(max-width:300px) {
+@media(max-width:320px) {
     .header {
         width: 300px;
-
+padding-left: 10px;
         flex-wrap: nowrap;
         /* padding-left: 50px; */
     }
@@ -585,9 +585,15 @@ inputList {
     .nav_item>ul>li {
         font-size: 10px;
 
-        padding-right: 6px;
+        padding-right: 9px;
 
 
+    }
+    .body{
+        width: 300px;
+    }
+    .homeBtn{
+        display: none;
     }
 
     .nav_item>ul {
@@ -634,7 +640,9 @@ inputList {
 
     }
     .menu-title{
-        width: 280px;
+        width: 300px;
+        margin-left: 3px;
+
     }
 
     .description {
@@ -645,6 +653,7 @@ inputList {
 
     .description-list {
         width: 280px;
+        margin-left: 7px;
     }
 
     .menuPrice {
@@ -661,7 +670,7 @@ inputList {
 
 
 
-@media (min-width:301px)and (max-width:480px) {
+@media (min-width:321px)and (max-width:480px) {
     .header {
 
         flex-wrap: nowrap;
@@ -679,7 +688,9 @@ inputList {
     .sect-14 {
         border-bottom: .5px solid black;
     }
-
+    .homeBtn{
+        display: none;
+    }
     .logo {
         width: 100px;
         height: 50px;
@@ -766,7 +777,9 @@ inputList {
     .shimmer-cont {
         margin-left: 45px;
     }
-
+.body{
+    width: 480px;
+}
     .homebtn {
         display: none;
     }
