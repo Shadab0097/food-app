@@ -1,0 +1,88 @@
+{
+    "info": {
+        "id": "465230",
+        "name": "EatFit",
+        "cloudinaryImageId": "ee4f041cd8611dccc19f4267783ab5ea",
+        "locality": "Sushant Lok Phase I",
+        "areaName": "DLF Phase 4",
+        "costForTwo": "₹270 for two",
+        "cuisines": [
+            "Chinese",
+            "Healthy Food",
+            "Tandoor",
+            "Pizzas",
+            "North Indian",
+            "Thalis",
+            "Biryani"
+        ],
+        "avgRating": 4.1,
+        "feeDetails": {
+            "restaurantId": "465230",
+            "fees": [
+                {
+                    "name": "BASE_DISTANCE",
+                    "fee": 5300
+                },
+                {
+                    "name": "BASE_TIME"
+                },
+                {
+                    "name": "ANCILLARY_SURGE_FEE"
+                }
+            ],
+            "totalFee": 5300
+        },
+        "parentId": "76139",
+        "avgRatingString": "4.1",
+        "totalRatingsString": "1K+",
+        "sla": {
+            "deliveryTime": 27,
+            "lastMileTravel": 5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "27 mins",
+            "lastMileTravelString": "5.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-08-04 23:45:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹125 OFF",
+            "subHeader": "ABOVE ₹249",
+            "discountTag": "FLAT DEAL"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/eatfit-sushant-lok-phase-i-dlf-phase-4-gurgaon-465230",
+        "type": "WEBLINK"
+    }
+}

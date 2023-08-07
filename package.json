@@ -1,0 +1,47 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "this is react app",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest",
+    "watch-test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadab0097/Namaste-React.git"
+  },
+  "keywords": [],
+  "author": "shadakhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shadab0097/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Shadab0097/Namaste-React#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "babel-jest": "^29.6.2",
+    "jest": "^29.6.2",
+    "jest-environment-jsdom": "^29.6.2",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.24",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "lucide-react": "^0.263.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.11.2"
+  },
+  "browserslist": [
+    "Last 2 versions"
+  ]
+}
