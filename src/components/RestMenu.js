@@ -57,7 +57,7 @@ const RestMenu = () => {
     // const {cloudinaryImageId } = imgdata?.data?.data
 
     return (
-        <div>
+        <>
             <div className="infoContainor">
                 <div className="info_sub_Cont">
                     <div className="location2">
@@ -79,7 +79,7 @@ const RestMenu = () => {
             />) }
 
             {/* </ul> */}
-        </div>
+        </>
     )
 }
 

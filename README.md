@@ -43,3 +43,23 @@ our app structure;
        - slice(cartslice)
        - dispatch(action)
        - selector(read the data)
+
+
+<!-- {/* <Carousel showArrows={true} className="main-Slider" > -->
+        <div>
+     
+      <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" alt="head-img"/>
+      </div>
+      <div>
+      
+      <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t"  alt="head-img"/>
+      </div>
+      <div>
+      <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/awurei8ypqkafoqay9ym"  alt="head-img"/>
+      </div>
+      <div>
+     
+      <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v"  alt="head-img"/>
+      </div>
+      </Carousel>
+      
