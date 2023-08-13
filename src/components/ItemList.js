@@ -21,6 +21,7 @@ const ItemList = ({ items }) => {
                             <span className="menu-name"> {item?.card?.info?.name}</span>
                             <span className="menu-cost"> ₹{item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice/ 100}</span>
                             <p className="description">{item?.card?.info?.description}</p>
+                            <p> ⭐{item?.card?.info?.ratings.aggregatedRating.rating}</p>
                         </div>
                         
                         <div className="menuListImg"> 

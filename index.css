@@ -636,13 +636,16 @@ inputList {
 
 @media(max-width:480px) {
     .header {
-        flex-direction: column;
+        /* flex-direction: column; */
+        /* background-color: #d0d8e3; */
         align-items: center;
-        justify-content: center;
+       justify-content: center;
         text-align: center;
+        flex-wrap: nowrap;
+        margin-bottom: 10px;
     }
     .logo{
-        width: 80px;
+        width: 60px;
         height: 50px;
     }
     .loginbtn{
@@ -650,15 +653,16 @@ inputList {
     }
 
     .nav_item > ul {
-        margin-left: 70px;
+        /* margin-left: 70px; */
         padding-right: 0px;
         text-align: center;
         margin-top: 10px;
     }
 
     .nav_item >ul > li{
-        font-size: 1.12rem;
+        font-size: 0.75rem;
         padding-right: 10px;
+        font-weight: 700;
     
     }
     
@@ -693,10 +697,51 @@ inputList {
     }
 
 
-    /* .location {
+    .location {
         font-size: 8px;
         display: none;
-    } */
+    }
+
+      .restnum {
+       flex-direction: column;
+      margin: auto;
+      align-items: center;
+
+        
+
+    } 
+    
+     .total-res {
+        font-size: 2rem;
+        margin-left: 0;
+
+    } 
+     .body {
+        width: 100%;
+        /* margin: auto; */
+        /* margin-left: 20px; */
+        padding-top: 5px;
+        padding-right: 0;
+        margin-top: 0;
+    } 
+.homeBtn{
+    justify-content: center;
+    width: 100vw;
+}
+    .taskBtn{
+        font-size: 0.75rem;
+        margin-left: 15px;
+            justify-content: center;
+    }
+.input-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+   .secod_header {
+        
+    } 
 
     /* .nav_item>ul>li {
         font-size: 10px;
@@ -706,9 +751,7 @@ inputList {
 
     } */
 
-    /* .body {
-        width: 100vw;
-    } */
+   
 
     /* .homeBtn {
         display: none;
@@ -722,9 +765,7 @@ inputList {
 
     } */
 
-    /* .secod_header {
-        display: none;
-    } */
+  
 
     /* .logo {
         width: 50px;
@@ -745,19 +786,8 @@ inputList {
 
     } */
 
-    /* .restnum {
-        font-size: 5px;
-        margin-top: -40px;
-        padding-top: -10px;
+   
 
-        
-
-    } */
-
-    /* .total-res {
-        font-size: 12px;
-
-    } */
 /* 
     .menu-title {
         width: 300px;

@@ -70,28 +70,26 @@ const Body = () => {
   return (
     <>
       <div className="secod_header">
-       
-         <div className="scrollWrapper">
-     
-         <div className="imageRow">
-     
-     {/* <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/pneknawbadtvceqzwiep" alt="head-img"/>
-     <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/zpkkdkmvlj5cuvqbc50t"  alt="head-img"/>
-     <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/awurei8ypqkafoqay9ym"  alt="head-img"/>
-     <img className="header_img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/rng/md/carousel/production/s5ug2key6e2sptaxku5v"  alt="head-img"/> */}
-     {renderSlide}
-     </div>
-     </div>
+
+        <div className="scrollWrapper">
+
+          <div className="imageRow">
+
+
+            {renderSlide}
+          </div>
+        </div>
       </div>
 
 
 
       <div className="body">
         <div className="restnum">
-          <h3 className="total-res">{filterList.length} restaurants</h3>
-
+          <h3 className="total-res">🍽️ {filterList.length} restaurants 🍽️</h3>
+          <div className="input-box">
           <input type="text" data-testid="searchinput" className="search" placeholder="search restaurants" onChange={(e) => { setinputList(e.target.value) }}
-            value={inputList} /> <button className="btn" data-testid="btnId" onClick={searchFilter}><Search size={22} /></button>
+            value={inputList} /> <button className="btn" data-testid="btnId" onClick={searchFilter}><Search size={24} /></button>
+            </div>
           <div>
             {/* <input value={loggedIn} onChange={(e)=>setShowUser(e.target.value)}/> */}
           </div>

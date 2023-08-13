@@ -5,6 +5,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import image from '../utils/logo.png.png'
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux"
+// import { AlignJustify} from "lucide-react"
 
 
 
@@ -12,8 +13,7 @@ import { useSelector } from "react-redux"
 const Header = () => {
   const [btnName, setbtnName] = useState('LogIn')
   // const [inputList, setinputList] = useState("");
-
-
+ 
   const onlineStatus = useOnlineStatus()
   const { loggedIn } = useContext(UserContext)
 
@@ -25,11 +25,11 @@ const Header = () => {
       <div className="header">
         <div className="logo_containor">
           <img className="logo" src={image} />
-          <p className="location"><span className="sect-14">Sector 14 </span>  Gurugram, Haryana 122022, India</p>
-
         </div>
-       
+         <p className="location"><span className="sect-14">Sector 14 </span>  Gurugram, Haryana 122022, India</p>
+      
         <div className="nav_item">
+
           <ul>
 
             <li className="online">Online Status :{onlineStatus ? "🟢" : "🔴"}</li>
