@@ -82,24 +82,41 @@
 
 .secod_header {
 
-    height: 295px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #1c1e2b;
-    overflow-y: hidden;
-    flex-direction: row;
+     height: 255px;
+    
+   
+     width: 100%; /* Set the width as needed */
+  overflow: hidden;
 
 }
-
+.imageRow{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab; /* Set the cursor to a grabbing hand */
+   /* Prevent text selection while dragging */
+    margin-bottom: -17px;
+    overflow-x: scroll;
+    scroll-behavior: smooth; /* Add smooth scrolling */
+   
+}
+.scrollWrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.imageRow:active {
+    cursor: grabbing; /* Set the cursor to a grabbing hand while dragging */
+  }
 .header_img {
-    height: 252px;
+    /* height: 252px;
     width: 380px;
     margin: 15px;
     border-radius: 20px;
-    
+     */
+  flex: 0 0 auto; /* Prevent items from growing or shrinking */
+  width: 380px; /* Adjust as needed */
+  height: 252px; /* Adjust as needed */
+  margin-right: 10px; /* Add some spacing between items */
 
 }
 /* .carousel-container {
@@ -364,13 +381,18 @@ inputList {
 }
 
 .shimmerh1{
-    color:  rgb(203, 210, 210);
+    color:  rgb(168, 171, 171);
     font-size: 40px;
+    text-align: center;
 }
 
 .emoji{
     font-size: 50px;
+    text-align: center;
     
+}
+.shimmer_header{
+    background-color: rgb(241, 247, 247);
 }
 
 
