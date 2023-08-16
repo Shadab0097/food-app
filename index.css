@@ -50,11 +50,15 @@
 .sect-14 {
     font-weight: 700;
     border-bottom: 2px solid black;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+  
+   
    
 }
 .location{
     overflow-y: hidden;
+    margin-left: -90px;
+
 }
 
 .nav_item>ul {
@@ -95,7 +99,7 @@
     white-space: nowrap;
     cursor: grab; /* Set the cursor to a grabbing hand */
    /* Prevent text selection while dragging */
-    margin-bottom: -17px;
+    margin-bottom: -5px;
     overflow-x: scroll;
     scroll-behavior: smooth; /* Add smooth scrolling */
    
@@ -117,6 +121,7 @@
   width: 380px; /* Adjust as needed */
   height: 252px; /* Adjust as needed */
   margin-right: 10px; /* Add some spacing between items */
+  border-radius: 30px;
 
 }
 /* .carousel-container {
@@ -182,7 +187,11 @@
     border: .5px solid #282c3f;
     border-radius: 20px;
 }
-
+.input-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 inputList {
     text-transform: capitalize;
