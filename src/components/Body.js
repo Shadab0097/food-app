@@ -19,6 +19,7 @@ const Body = () => {
   const [Listofrest, setListofrest] = useState([]);
   const [filterList, setfilterList] = useState([])
   const [homeImages, setHomeImages] = useState([])
+  // const[style,setStyle] =useState([])
   // const navigate = useNavigate()
 
   const { loggedIn, setShowUser } = useContext(UserContext)
@@ -34,6 +35,7 @@ const Body = () => {
     setListofrest(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     setfilterList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     setHomeImages(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
+    // setStyle(json?.data?.cards[1]?.card?.card?.imageGridCards?.info)
   }
   // const {Listofrest , filterList} = useRestaurantList();
   const onlineStatus = useOnlineStatus()
@@ -60,13 +62,9 @@ const Body = () => {
     }
 
   }
-  // const newData = filterList?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-  // const mind = homeImages?.info[0].imageId
-  // console.log(mind)
-
-  // const {avgRating , deliveryTime , costForTwo} = filterList?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-
+  
   const renderSlide = homeImages.map((crausalImg) => <img className="header_img" src={CDN_LINK + crausalImg.imageId} key={crausalImg.id} />)
+  //  const yourMind = style.map((styleImage)=> <img className="image-row img" src={CDN_LINK + styleImage.imageId} key={styleImage.id}/>)
   return (
     <>
       <div className="secod_header">
@@ -75,11 +73,19 @@ const Body = () => {
 
           <div className="imageRow">
 
-
             {renderSlide}
+
           </div>
         </div>
       </div>
+
+      {/* <div className="style-header">
+      <div className="image-row-container">
+    <div className="image-row">
+    {yourMind}
+    </div>
+    </div>
+    </div> */}
 
 
 

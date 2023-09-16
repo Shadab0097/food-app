@@ -12,16 +12,6 @@
     /* overflow-y: hidden; */
 }
 
-/* 
-.app{
-
-    width: 100vw;
-} */
-
-/* html{
-    width: auto;
-} */
-
 
 /* Header-start ///////////////////////////////////////*/
 .header {
@@ -57,7 +47,7 @@
 }
 .location{
     overflow-y: hidden;
-    margin-left: -90px;
+    /* margin-left: -90px; */
 
 }
 
@@ -87,10 +77,8 @@
 .secod_header {
 
      height: 255px;
-    
-   
      width: 100%; /* Set the width as needed */
-  overflow: hidden;
+     overflow: hidden;
 
 }
 .imageRow{
@@ -112,11 +100,7 @@
     cursor: grabbing; /* Set the cursor to a grabbing hand while dragging */
   }
 .header_img {
-    /* height: 252px;
-    width: 380px;
-    margin: 15px;
-    border-radius: 20px;
-     */
+   
   flex: 0 0 auto; /* Prevent items from growing or shrinking */
   width: 380px; /* Adjust as needed */
   height: 252px; /* Adjust as needed */
@@ -124,16 +108,60 @@
   border-radius: 30px;
 
 }
-/* .carousel-container {
-    width: 60vw;
+/* .yourmind{
+    flex: 0 0 auto;
+    width: 120px;
+    height: 100px;
+    padding: 10px;
+}
+.second-crousal{
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
     display: flex;
+   
     align-items: center;
     justify-content: center;
-    height: 400px;
-    margin: auto;
-  } */
+   
+} */
 
-
+/* .style-header{
+  
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+  
+  .image-row-container {
+    width: 700px;
+    overflow: hidden;
+    display: flex;
+   
+  }
+  
+  .image-row {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    cursor: grab; 
+   
+   
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+  }
+  
+  .image-row img {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+   */
 
 /*Header-end////////////////////////////////*/
 
@@ -674,7 +702,9 @@ inputList {
         font-weight: 700;
     
     }
-    
+   /* .style-header{
+    display: block;
+   } */
     .description {
         white-space: nowrap;
         overflow: hidden;

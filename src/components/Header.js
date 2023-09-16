@@ -25,8 +25,9 @@ const Header = () => {
       <div className="header">
         <div className="logo_containor">
           <img className="logo" src={image} />
+          <p className="location"><span className="sect-14">Sector 14 </span>  Gurugram, Haryana 122022, India</p>
         </div>
-         <p className="location"><span className="sect-14">Sector 14 </span>  Gurugram, Haryana 122022, India</p>
+        
       
         <div className="nav_item">
 
