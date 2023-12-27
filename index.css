@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    width: 100vw;
+    width: auto;
    
 }
 
@@ -76,7 +76,7 @@
 
 .secod_header {
 
-     height: 255px;
+     height: auto;
      width: 100%; /* Set the width as needed */
      overflow: hidden;
 
@@ -87,7 +87,7 @@
     white-space: nowrap;
     cursor: grab; /* Set the cursor to a grabbing hand */
    /* Prevent text selection while dragging */
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     overflow-x: scroll;
     scroll-behavior: smooth; /* Add smooth scrolling */
    
@@ -102,11 +102,18 @@
 .header_img {
    
   flex: 0 0 auto; /* Prevent items from growing or shrinking */
-  width: 380px; /* Adjust as needed */
-  height: 252px; /* Adjust as needed */
+  width: 144px; /* Adjust as needed */
+  height: 120px; /* Adjust as needed */
   margin-right: 10px; /* Add some spacing between items */
   border-radius: 30px;
-
+ 
+  
+}
+.mind-top{
+    font-weight: 700;
+    font-size: larger;
+    padding: 20px;
+    margin-left: 30px;
 }
 /* .yourmind{
     flex: 0 0 auto;
