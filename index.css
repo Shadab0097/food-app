@@ -688,6 +688,9 @@ inputList {
         flex-wrap: nowrap;
         margin-bottom: 10px;
     }
+    .mind-top{
+        display: none;
+    }
     .logo{
         width: 60px;
         height: 50px;

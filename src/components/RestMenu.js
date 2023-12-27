@@ -36,14 +36,14 @@ const RestMenu = () => {
     if (restInfo === null) return <MenuShimmer />
 
 
-    const { name, cuisines } = restInfo?.cards[0]?.card?.card?.info;
+    const { name, cuisines } = restInfo?.cards[2]?.card?.card?.info || restInfo?.cards[0]?.card?.card?.info;
 
     // const { itemCards } = restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
 
-    const { areaName, avgRatingString, totalRatingsString } = restInfo?.cards[0]?.card?.card?.info;
+    const { areaName, avgRatingString, totalRatingsString } = restInfo?.cards[2]?.card?.card?.info || restInfo?.cards[0]?.card?.card?.info;
 
     // console.log(restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards)
-    const responsiveCatogories = restInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards || restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+    const responsiveCatogories = restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards || restInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     
     const categories = responsiveCatogories.filter((c) => {
         return (c?.card?.card?.["@type"] ===

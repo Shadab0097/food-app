@@ -32,9 +32,9 @@ const Body = () => {
     const data = await fetch(REST_LIST)
     const json = await data.json()
     console.log(json)
-    setListofrest(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    setfilterList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-    setHomeImages(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info)
+    setListofrest(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setfilterList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setHomeImages(json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || [])
     // setStyle(json?.data?.cards[1]?.card?.card?.imageGridCards?.info)
   }
   // const {Listofrest , filterList} = useRestaurantList();

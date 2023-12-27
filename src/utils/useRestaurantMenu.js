@@ -15,7 +15,7 @@ const useRestaurantMenu =(restid)=>{
         let dataMenu = await fetch(MENU_LINK + restid)
         let jsonMenu = await dataMenu.json()
         setRestInfo(jsonMenu?.data)
-        // console.log(jsonMenu)
+        console.log(jsonMenu)
 
     }
     return restInfo
