@@ -7,7 +7,8 @@ import { clearCart } from "../utils/cartSlice";
 const Cart =()=>{
     const cartItems = useSelector((store)=>store.cart.items)
     const dispatch = useDispatch()
-
+   if (!cartItems) return
+    console.log(cartItems)
     const HandleClearCart=()=>{
         dispatch(clearCart())
 

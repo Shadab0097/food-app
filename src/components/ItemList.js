@@ -9,32 +9,36 @@ const ItemList = ({ items }) => {
         dispatch(addItem(item))
 
     }
+    console.log(items)
+    // let itemMenu = item?.categories?.itemCards
+    // console.log(itemMenu)
     return (
         <>
             <div>
 
-                {items.map((item) => {
-                                return(
-                    <div data-testid ="foodItems" key={item?.card?.info?.id} className="description-list">
+                {items?.map((item)=>{
+                            return(
+                                <div data-testid ="foodItems" key={item?.card?.info?.id} className="description-list">
 
-                        <div className="menuPrice">
-                            <span className="menu-name"> {item?.card?.info?.name}</span>
-                            <span className="menu-cost"> ₹{item?.card?.info?.price / 100 || item?.card?.info?.defaultPrice/ 100}</span>
-                            <p className="description">{item?.card?.info?.description}</p>
-                            <p> ⭐{item?.card?.info?.ratings.aggregatedRating.rating}</p>
-                        </div>
-                        
-                        <div className="menuListImg"> 
-                        {<img className="menuImg" src={CDN_LINK + item?.card?.info?.imageId} />} 
-                        <button data-testid ="btntest" className="add-btn" onClick={()=>HandleAddItmes(item)}>Add<span className="plus-btn">➕</span></button>
-                        </div> 
-
-                    </div>
+                                <div className="menuPrice">
+                                    <span className="menu-name"> {item?.card?.info?.name}</span>
+                                    <span className="menu-cost"> ₹{item?.card?.info?.price/100 }</span>
+                                    <p className="description">{item?.card?.info?.description}</p>
+                                    <p> ⭐{item?.card?.info?.ratings?.aggregatedRating?.rating}</p>
+                                </div>
+                                
+                                <div className="menuListImg"> 
+                                {<img className="menuImg" src={CDN_LINK + item?.card?.info?.imageId} />} 
+                                <button data-testid ="btntest" className="add-btn" onClick={()=>HandleAddItmes(item)}>Add<span className="plus-btn">➕</span></button>
+                                </div> 
+        
+                            </div>
+                            
+                            )
+                })}
                     
-                    )
-                }
-
-                )}
+                 
+                
             </div>
         </>
     )

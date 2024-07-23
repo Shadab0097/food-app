@@ -9,19 +9,26 @@ const RestaurantsCategory = ({ menu , showMenu , setShowIndex}) => {
         setShowIndex(!showMenu)
         setToggle(!toggle)
     }
+
     console.log(menu)
+
+    // console.log(menu?.card?.card?.title)
+
+
 
     return (
         <>
             <div className="menuListCont1">
 
                 <div className="menu-title" onClick={handleClick}>
-                    <span className="title">{menu.title}  ({menu?.itemCards?.length})</span>
+                    <span className="title">{menu?.card?.card?.title}  ({menu?.card?.card?.itemCards?.length})</span>
                     <span>⬇️</span>
                 </div>
+               
                 <div>
-                  {(showMenu && toggle )&& <ItemList items={menu.itemCards} />}
+                  {(showMenu && toggle ) && <ItemList items={menu?.card?.card?.itemCards} />}
                 </div>
+            
                 <div className="end-border"></div>
 
 

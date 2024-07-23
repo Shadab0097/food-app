@@ -10,7 +10,7 @@ const Restcard = (props) => {
   return (
     <div className="card_cont">
       <div data-testid = "restCardId" className="card" >
-        <img className="card_img"
+        <img className="card_img h-[181px] w-[273px] rounded-md"
           alt="res-img" src={CDN_LINK + cloudinaryImageId} />
         <div className="card_info">
           <h5 className="rest-name">{name}</h5>

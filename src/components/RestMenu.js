@@ -16,45 +16,31 @@ const RestMenu = () => {
 
     const restInfo = useRestaurantMenu(restid)
 
-    const [showIndex , setShowIndex] = useState(0)
+    const [showIndex, setShowIndex] = useState(0)
+    const itemCategory = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    const NestedItemCategory = "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory"
 
-    // console.log('hello')
-    // useEffect(() => {
-    //     fetchDataresMenu()
-    //     console.log('succefull')
-
-    // }, [])
-
-    // const fetchDataresMenu = async () => {
-    //     console.log(restid)
-    //     const dataMenu = await fetch(MENU_LINK + restid )
-    //     const jsonMenu = await dataMenu.json()
-    //     console.log(jsonMenu)
-    //     setRestInfo(jsonMenu?.data)
-    // }
 
     if (restInfo === null) return <MenuShimmer />
 
-
     const { name, cuisines } = restInfo?.cards[2]?.card?.card?.info || restInfo?.cards[0]?.card?.card?.info;
-
-    // const { itemCards } = restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card
 
     const { areaName, avgRatingString, totalRatingsString } = restInfo?.cards[2]?.card?.card?.info || restInfo?.cards[0]?.card?.card?.info;
 
-    // console.log(restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards)
-    const responsiveCatogories = restInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards || restInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards
-    
-    const categories = responsiveCatogories.filter((c) => {
-        return (c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
+    const responsiveCatogories = restInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+
+    const menuCategories = responsiveCatogories.filter((c) => {
+        return (
+            c?.card?.card["@type"] === itemCategory
+        )
+
+
     })
 
-    console.log(categories)
+    // console.log(menuCategories)
 
-    // console.log(itemCards)
-    // const{imgdata} =props
-    // const {cloudinaryImageId } = imgdata?.data?.data
+
+
 
     return (
         <>
@@ -69,16 +55,20 @@ const RestMenu = () => {
             </div>
             <h2 className="menuName">menu</h2>
 
-            {/* <ul className="menuLi"> */}
+      
 
-            {categories?.map((category ,index) => <RestaurantsCategory menu={category?.card?.card} 
-            key={category?.card?.card?.title} 
-            showMenu={index === showIndex ? true:false}
-            setShowIndex={()=>{return setShowIndex(index)}}
-            
-            />) }
+            {menuCategories?.map((category, index) => {
 
-            {/* </ul> */}
+                return (
+                    <RestaurantsCategory menu={category}
+                        key={category?.card?.card?.title}
+                        showMenu={index === showIndex ? true : false}
+                        setShowIndex={() => { return setShowIndex(index) }}
+ />)
+ 
+            })}
+
+
         </>
     )
 }
